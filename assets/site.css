@@ -189,3 +189,10 @@ td.code { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 
 .archive span { color: var(--muted); font-size: 1rem; }
 .callout { background: var(--accent-soft); border-radius: 12px; padding: 18px 20px; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
 .callout p { font-weight: 600; }
+
+/* Support box */
+.support { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: grid; gap: 14px; max-width: 760px; }
+.addr { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.addr code { font: 600 0.95rem ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--band); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; word-break: break-all; flex: 1 1 320px; color: var(--ink); }
+.addr button { padding: 10px 16px; }
+.support small { color: var(--muted); font-size: 0.88rem; }

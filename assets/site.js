@@ -44,3 +44,14 @@ document.querySelectorAll("[data-copy]").forEach(function (btn) {
     })
     .catch(function () {});
 })();
+
+// Copy wallet address
+document.querySelectorAll("[data-copy-addr]").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var addr = document.getElementById(btn.dataset.copyAddr).textContent.trim();
+    navigator.clipboard.writeText(addr).then(function () {
+      btn.textContent = "Copied";
+      setTimeout(function () { btn.textContent = "Copy address"; }, 2000);
+    }).catch(function () { btn.textContent = "Select the address to copy"; });
+  });
+});
