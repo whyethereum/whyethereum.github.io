@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethereum Upgrade Tracker</title>
+<meta name="description" content="Live status of Ethereum's network upgrades: Glamsterdam, Hegotá and the long-term roadmap, with features, testnet dates and mainnet targets.">
+<meta property="og:title" content="Ethereum Upgrade Tracker">
+<meta property="og:description" content="Live status of Ethereum's network upgrades: Glamsterdam, Hegotá and the long-term roadmap, with features, testnet dates and mainnet targets.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://whyethereum.github.io/tracker.html">
+<link rel="canonical" href="https://whyethereum.github.io/tracker.html">
+<link rel="alternate" type="application/rss+xml" title="Why Ethereum news" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg width="22" height="34" viewBox="0 0 22 34" aria-hidden="true"><path d="M11 0 0 17.3 11 23.8 22 17.3z" fill="var(--accent)"/><path d="M11 0v23.8l11-6.5z" fill="var(--ink)" opacity=".35"/><path d="M11 25.9 0 19.4 11 34l11-14.6z" fill="var(--accent)" opacity=".75"/></svg>
+      Why Ethereum
+    </a>
+    <div class="links">
+      <a href="/#news">News</a>
+      <a href="/tracker.html">Upgrade tracker</a>
+      <a href="/#where">Where to buy</a>
+      <a href="/#buy">How to buy</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Upgrade tracker</p>
+    <h1>Ethereum upgrade tracker</h1>
+    <p class="sub">Where every network upgrade stands, in plain English. Status, features and dates are checked against developer call notes and official Ethereum Foundation posts.</p>
+    <p class="updated">Last updated <time id="tracker-updated" datetime="2026-11-19">November 19, 2026</time></p>
+  </div>
+</header>
+
+<!-- TRACKER:START -->
+<section aria-labelledby="g-h">
+  <div class="wrap">
+    <article class="fork">
+      <div class="fork-top"><h2 id="g-h">Glamsterdam</h2><span class="status wait">Paused before final testnet</span></div>
+      <p class="sub">The next upgrade. It changes how blocks are built and processed so Ethereum can safely handle far more activity, with a planned gas limit of 200 million after launch.</p>
+      <div class="kv">
+        <div><span>Mainnet date</span><b>Not set yet</b></div>
+        <div><span>Expected</span><b>Early 2027</b></div>
+        <div><span>Test networks</span><b>Sepolia live · Hoodi on hold</b></div>
+        <div><span>Main blocker</span><b>Gas repricing review</b></div>
+      </div>
+      <h3>What's in it</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Proposal</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td class="code">EIP-7732</td><td>Enshrined proposer-builder separation (ePBS). Splits block building from block proposing inside the protocol, giving validators more time to check blocks.</td></tr>
+          <tr><td class="code">EIP-7928</td><td>Block-level access lists. Each block lists the data it touches, so computers can process transactions in parallel.</td></tr>
+          <tr><td class="code">EIP-8037</td><td>Reprices gas for creating new state, such as new storage slots and accounts, to keep the database from growing too fast.</td></tr>
+          <tr><td class="code">EIP-8038</td><td>Reprices gas for reading and writing existing state.</td></tr>
+          <tr><td class="code">EIP-8159</td><td>Networking update (eth/71) for how nodes share data.</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Timeline</h3>
+      <ul class="steps-list">
+        <li><span class="status done">Mar–Sep 2026</span><span>Developer test networks (devnets 0–11) run, ending with an 84,000-validator devnet in September.</span></li>
+        <li><span class="status done">Aug 17, 2026</span><span>Platåberget public testnet launches. Mainnet target moves from the first half of 2026 to Q4 2026.</span></li>
+        <li><span class="status done">Oct 6, 2026</span><span>Glamsterdam goes live on the Sepolia test network.</span></li>
+        <li><span class="status wait">Oct 22, 2026</span><span>Developers call off the Hoodi testnet fork planned for Oct 26 after auditors show the gas changes can alter how some contracts behave.</span></li>
+        <li><span class="status wait">Nov 6, 2026</span><span>The Ethereum Foundation opens a public review of eight contract assumptions the new gas model breaks. Hoodi waits until these risks are resolved.</span></li>
+        <li><span class="status plan">Next</span><span>Decide how to fix or adjust EIP-8037 and EIP-8038, then set new Hoodi and mainnet dates.</span></li>
+      </ul>
+      <p class="src">Sources: <a href="https://ethereum.org/roadmap/glamsterdam/" rel="noopener" target="_blank">ethereum.org</a>, <a href="https://cointelegraph.com/news/ethereum-glamsterdam-upgrade-sepolia" rel="noopener" target="_blank">Cointelegraph</a>, <a href="https://www.bankless.com/read/news/ethereum-devs-postpone-glamsterdam-on-hoodi-over-contract-security-risks" rel="noopener" target="_blank">Bankless</a>, <a href="https://christinedkim.substack.com/p/acde-248" rel="noopener" target="_blank">ACDE #248 notes</a>, <a href="https://blog.ethereum.org/2026/08/17/plataberget-testnet" rel="noopener" target="_blank">EF blog</a></p>
+    </article>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="h-h">
+  <div class="wrap">
+    <article class="fork">
+      <div class="fork-top"><h2 id="h-h">Hegotá</h2><span class="status plan">Planning</span></div>
+      <p class="sub">The upgrade after Glamsterdam, named after Bogotá (execution layer) and Heze (consensus layer). It focuses on censorship resistance and better wallets.</p>
+      <div class="kv">
+        <div><span>Mainnet date</span><b>Not set yet</b></div>
+        <div><span>Target</span><b>2027</b></div>
+        <div><span>Locked-in features</span><b>2</b></div>
+        <div><span>Status</span><b>Choosing final scope</b></div>
+      </div>
+      <h3>Locked in</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Proposal</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td class="code">EIP-7805</td><td>FOCIL (fork-choice enforced inclusion lists). Lets many validators force transactions into blocks, so no single block builder can censor them.</td></tr>
+          <tr><td class="code">EIP-8141</td><td>Frame transactions. Native smart-wallet features such as paying fees in other tokens, plus an easier path to quantum-safe signatures.</td></tr>
+        </tbody>
+      </table></div>
+      <p>Developers have called both features must-ship: they'd rather delay Hegotá than launch without them. More than a dozen other proposals are still being considered, including ideas for higher gas limits and more blob space.</p>
+      <p class="src">Sources: <a href="https://ethereum.org/roadmap/hegota/" rel="noopener" target="_blank">ethereum.org</a>, <a href="https://forklog.com/en/news/ethereum-foundation-protocol-cluster-names-two-must-ship-eips-for-hegota" rel="noopener" target="_blank">ForkLog</a>, <a href="https://blog.ethereum.org/2025/12/22/hegota-timeline" rel="noopener" target="_blank">EF blog</a></p>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="l-h">
+  <div class="wrap">
+    <article class="fork">
+      <div class="fork-top"><h2 id="l-h">Lean Ethereum (long-term roadmap)</h2><span class="status live-s">Research &amp; building</span></div>
+      <p class="sub">A multi-year rebuild of Ethereum's core, planned across about seven upgrades through 2029.</p>
+      <div class="kv">
+        <div><span>Quantum-safe target</span><b>December 2029</b></div>
+        <div><span>Next progress review</span><b>January 2027</b></div>
+        <div><span>Finality goal</span><b>About 8 seconds</b></div>
+        <div><span>Throughput goal</span><b>About 10,000 TPS on L1</b></div>
+      </div>
+      <p>The plan includes shorter block times, much faster finality, real-time zero-knowledge proofs of every block, and replacing today's signatures with quantum-resistant ones. Dates for most steps aren't set yet.</p>
+      <p class="src">Sources: <a href="https://pq.ethereum.org/" rel="noopener" target="_blank">EF post-quantum roadmap</a>, <a href="https://forklog.com/en/news/lean-ethereum-what-buterins-strawmap-promises" rel="noopener" target="_blank">ForkLog</a>, <a href="https://www.theblock.co/post/407176/vitalik-buterin-says-ethereums-next-rebuild-and-take-three-to-four-years" rel="noopener" target="_blank">The Block</a></p>
+    </article>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="f-h">
+  <div class="wrap">
+    <article class="fork">
+      <div class="fork-top"><h2 id="f-h">Fusaka</h2><span class="status done">Live on mainnet</span></div>
+      <p class="sub">Shipped December 3, 2025. Its headline feature, PeerDAS, lets nodes check data by sampling small pieces, which made room for many more blobs (the cheap data space layer 2 networks use).</p>
+      <ul class="steps-list">
+        <li><span class="status done">Dec 3, 2025</span><span>Fusaka activates on mainnet.</span></li>
+        <li><span class="status done">Dec 9, 2025</span><span>First blob increase: target 6 → 10 blobs per block, maximum 9 → 15.</span></li>
+        <li><span class="status done">Jan 7, 2026</span><span>Second blob increase: target 14, maximum 21. No further increases are scheduled.</span></li>
+      </ul>
+      <p class="src">Sources: <a href="https://www.theblock.co/news/business/2026-01-07-ethereum-rolls-out-final-planned-blob-parameters-only-fork-as-final-step-in-fusaka-upgrade-384709" rel="noopener" target="_blank">The Block</a>, <a href="https://blockeden.xyz/blog/2026/04/29/bpo2-ethereum-blob-parameter-upgrade-l2-economics/" rel="noopener" target="_blank">BlockEden</a></p>
+    </article>
+  </div>
+</section>
+<!-- TRACKER:END -->
+<footer>
+  <div class="wrap">
+    <p><b>Why Ethereum</b> is an independent guide. It is not affiliated with the Ethereum Foundation or with any exchange.</p>
+    <p>Educational content only, not financial advice. Do your own research and consider a licensed financial advisor before investing. Some links are sponsored and may earn us a commission.</p>
+    <p><a href="/about.html">How we cover news</a> · <a href="/news/">Archive</a> · <a href="/feed.xml">RSS</a></p>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>

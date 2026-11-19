@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Why Ethereum</title>
+  <link>https://whyethereum.github.io/</link>
+  <description>Plain-English Ethereum news and upgrade updates.</description>
+  <language>en-us</language>
+  <!-- FEED:START -->
+  <item>
+    <title>Ethereum news: November 19, 2026</title>
+    <link>https://whyethereum.github.io/news/2026-11-19.html</link>
+    <guid>https://whyethereum.github.io/news/2026-11-19.html</guid>
+    <pubDate>Thu, 19 Nov 2026 12:00:00 -0500</pubDate>
+    <description>Glamsterdam gets extra safety checks, Hegotá locks in two features, Devcon 8 wraps up, and the quantum-safe roadmap.</description>
+  </item>
+  <!-- FEED:END -->
+</channel>
+</rss>
